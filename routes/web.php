@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ServiceController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,12 +23,11 @@ Route::get('/chi-sono', function () {
 });
 
 
-Route::get('/servizi', function () {
-    return view('servizi');
-});
-
 
 Route::get('/contatti', function () {
     return view('contatti');
 });
 
+
+
+Route::get('/servizi', [ServiceController::class, 'index']);
