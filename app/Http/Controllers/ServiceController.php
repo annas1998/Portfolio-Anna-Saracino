@@ -65,6 +65,7 @@ class ServiceController extends Controller
         'tempo_di_realizzazione' => '1 settimana'
     ],
     [
+
         'uri' => 'formazione',
         'name' => 'Formazione Online',
         'costo' => 500,

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,10 +25,9 @@ Route::get('/chi-sono', function () {
 
 
 
-Route::get('/contatti', function () {
-    return view('contatti');
+Route::get('/contact', function () {
+    return view('contact');
 });
-
-
-
+Route::get('/contact', [ContactController::class, 'showForm'])->name('show.contact');
+Route::post('/inviaemail', [ContactController::class, 'submitForm'])->name('submit.contact');
 Route::get('/servizi', [ServiceController::class, 'index']);

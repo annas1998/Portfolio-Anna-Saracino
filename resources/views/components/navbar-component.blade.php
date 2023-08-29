@@ -7,7 +7,7 @@
                 <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/chi-sono">Chi sono</a></li>
                 <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/servizi">Servizi Offerti</a></li>
-                <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/contatti">Contatti</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/contact">Contatti</a></li>
             </ul>
         </div>
     </div>
